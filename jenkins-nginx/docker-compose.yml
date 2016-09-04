@@ -1,5 +1,4 @@
 jenkins:
-  container_name: jenkins
   restart: always
   build: ./jenkins
   expose:
@@ -9,7 +8,6 @@ jenkins:
     - ./jenkins:/usr/src/app
 
 nginx:
-  container_name: nginx
   restart: always
   build: ./nginx
   ports:
