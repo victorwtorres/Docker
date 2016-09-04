@@ -1,0 +1,21 @@
+jenkins:
+  container_name: jenkins
+  restart: always
+  build: ./jenkins
+  expose:
+    - "8080"
+    - "50000"
+  volumes:
+    - ./jenkins:/usr/src/app
+
+nginx:
+  container_name: nginx
+  restart: always
+  build: ./nginx
+  ports:
+    - "80:80"
+    - "50000:50000"
+  volumes_from:
+    - jenkins
+  links:
+    - jenkins:jenkins
