@@ -1,4 +1,5 @@
-# After running docker-compose up, edit owncloud's config and add:
+# After running docker-compose up.
+Edit owncloud's config and add:
 
 'memcache.local' => '\\OC\\Memcache\\Redis',
 'filelocking.enabled' => 'true',
