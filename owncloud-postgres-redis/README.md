@@ -1,4 +1,4 @@
-# After running docker-compose up.
+# After running docker-compose up
 Edit owncloud's config and add:
 
 'memcache.local' => '\\OC\\Memcache\\Redis',
