@@ -1,5 +1,5 @@
-# Docker-Builds
-This repo contains example builds for either docker or docker-compose.
+# Docker-Builds-Outdated
+This repo contains example builds for either docker or docker-compose. All of these are outdated and should not be used.
 
 # django-gunicorn-nginx
 Basic 2 container solution for running django/gunicorn with nginx.
